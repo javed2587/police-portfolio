@@ -1,0 +1,14 @@
+<section id="videos" class="video-gallery">
+  <h2>Video Coverage</h2>
+  <div class="grid">
+    @for (v of videos(); track v.id) {
+      <div class="video-card">
+        <div class="frame-wrap">
+          <iframe [src]="getEmbedUrl(v)" frameborder="0" allowfullscreen loading="lazy" loading="lazy" decoding="async"></iframe>
+        </div>
+        <h4>{{ v.title }}</h4>
+        <p>{{ v.event }}</p>
+      </div>
+    }
+  </div>
+</section>

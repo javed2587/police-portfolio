@@ -1,0 +1,10 @@
+.leadership { padding: 5rem 2rem; background: #f5f1e6; }
+.leadership h2 { text-align: center; color: #0b1f3a; font-size: 2rem; margin-bottom: 2.5rem; }
+.grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 900px; margin: 0 auto; }
+.leader-card { text-align: center; width: 200px; }
+.leader-card img {
+  width: 160px; height: 160px; object-fit: cover; border-radius: 50%;
+  border: 3px solid #c9a24b; margin-bottom: 1rem; box-shadow: 0 6px 16px rgba(11,31,58,.15);
+}
+.leader-card h3 { margin: 0; color: #0b1f3a; font-size: 1.05rem; }
+.leader-card p { margin: .2rem 0 0; color: #888; font-size: .85rem; }

@@ -1,0 +1,5 @@
+/* contact.component.css */
+.contact { padding: 4rem 2rem; text-align: center; background: #0b1f3a; color: #f5f1e6; }
+.contact h2 { margin-bottom: .5rem; }
+.contact .cta { display: inline-block; margin: 1.2rem 0; color: #c9a24b; font-weight: 600; text-decoration: none; }
+.copy { font-size: .8rem; color: #8ea0be; margin-top: 2rem; }

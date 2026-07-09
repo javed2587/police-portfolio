@@ -1,0 +1,12 @@
+<!-- navbar.component.html -->
+<nav class="navbar">
+  <a href="#hero" class="brand">PRO&nbsp;Portfolio</a>
+  <button class="burger" (click)="toggleMenu()" aria-label="Menu">☰</button>
+  <ul class="nav-links" [class.open]="menuOpen()">
+    <li><a href="#about" (click)="closeMenu()">About</a></li>
+    <li><a href="#duties" (click)="closeMenu()">Assignments</a></li>
+    <li><a href="#videos" (click)="closeMenu()">Videos</a></li>
+    <li><a href="#posters" (click)="closeMenu()">Posters</a></li>
+    <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+  </ul>
+</nav>

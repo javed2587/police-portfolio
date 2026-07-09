@@ -1,0 +1,33 @@
+<!-- poster-gallery.component.html -->
+<section id="posters" class="poster-gallery">
+  <h2>Event Posters</h2>
+  <h4>My Intiatives i introduced this one new thing </h4>
+  <div class="grid">
+    <!-- poster-gallery.component.html -->
+<!-- @for (p of posters(); track $index) { -->
+    <!-- @for (p of posters(); track p.imgUrl) { -->
+     @for (p of posters().slice(0, visibleCount()); track $index) {
+      <figure class="poster" (click)="open(p)">
+        <!-- <img [src]="p.imgUrl" [alt]="p.title" loading="lazy" /> -->
+         <img [src]="p.imgUrl" [alt]="p.title" loading="lazy" decoding="async" />
+        <figcaption>
+          <strong>{{ p.title }}</strong>
+          <span>{{ p.event }}</span>
+        </figcaption>
+      </figure>
+    }
+  </div>
+
+@if (visibleCount() < posters().length) {
+  <button class="load-more" (click)="showMore()">Load More Posters</button>
+}
+
+  @if (activePoster(); as p) {
+    <div class="lightbox" (click)="close()">
+      <img [src]="p.imgUrl" [alt]="p.title" />
+      <p>{{ p.title }} — {{ p.event }}</p>
+    </div>
+  }
+</section>
+
+<!-- poster-gallery.component.html -->

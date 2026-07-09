@@ -1,0 +1,26 @@
+<section id="leadership" class="leadership">
+  <h2>Under Whose Command I Served</h2>
+  <div class="grid">
+    <!-- @for (l of leaders(); track l.name) {
+      <div class="leader-card">
+        <img [src]="l.photo" [alt]="l.name" (error)="$event.target.src = fallbackImg" />
+        <h3>{{ l.name }}</h3>
+        <p>{{ l.designation }}</p>
+      </div>
+    } -->
+      <!-- leadership.component.html -->
+@for (l of leaders(); track $index) {
+  <div class="leader-card">
+    <img [src]="l.photo" [alt]="l.name" (error)="$event.target.src = fallbackImg" loading="lazy" decoding="async"/>
+    <h3>{{ l.name }}</h3>
+    <p>{{ l.designation }}</p>
+  </div>
+}
+  </div>
+</section>
+
+
+
+
+        <!-- <img [src]="l.photo" [alt]="l.name" (error)="$event.target.src='assets/placeholder.jpg'" /> -->
+        <!-- use this in place of 'assets/placeholder.jpg' everywhere -->

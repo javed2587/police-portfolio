@@ -1,0 +1,27 @@
+<!-- media-showcase.component.html -->
+<section id="showcase" class="showcase">
+  <h2>Coverage &amp; Presentation</h2>
+  <div class="grid">
+    <!-- media-showcase.component.html -->
+@for (item of items(); track $index) {
+      <div class="showcase-card">
+        <div class="tabs">
+          <button [class.active]="item.activeTab === 'video'" (click)="setTab(item, 'video')">Video</button>
+          <button [class.active]="item.activeTab === 'ppt'" (click)="setTab(item, 'ppt')">Presentation</button>
+        </div>
+
+        <div class="frame-wrap">
+          @if (item.activeTab === 'video') {
+            <iframe [src]="getVideoUrl(item)" frameborder="0" allowfullscreen loading="lazy"></iframe>
+          } @else {
+            <iframe [src]="getPptUrl(item)" frameborder="0" allowfullscreen loading="lazy"></iframe>
+          }
+        </div>
+
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.event }}</p>
+      </div>
+    }
+    
+  </div>
+</section>
