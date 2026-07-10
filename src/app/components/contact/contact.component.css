@@ -1,5 +1,26 @@
-/* contact.component.css */
-.contact { padding: 4rem 2rem; text-align: center; background: #0b1f3a; color: #f5f1e6; }
-.contact h2 { margin-bottom: .5rem; }
-.contact .cta { display: inline-block; margin: 1.2rem 0; color: #c9a24b; font-weight: 600; text-decoration: none; }
-.copy { font-size: .8rem; color: #8ea0be; margin-top: 2rem; }
+.contact { padding: 4rem 2rem 2rem; background: #071527; color: #f5f1e6; }
+.contact-inner {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 3rem;
+  max-width: 1100px; margin: 0 auto; padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(245,241,230,.1);
+}
+.contact-main h2 { margin: 0 0 .5rem; font-size: 1.8rem; }
+.contact-main p { color: #cfd6e4; margin-bottom: 1rem; max-width: 380px; }
+.contact-main .cta {
+  display: inline-block; color: #c9a24b; font-weight: 700;
+  text-decoration: none; border-bottom: 1px solid #c9a24b; padding-bottom: 2px;
+}
+
+.contact-links { display: flex; gap: 3rem; }
+.col h4 {
+  font-size: .78rem; text-transform: uppercase; letter-spacing: 1px;
+  color: #c9a24b; margin: 0 0 .8rem;
+}
+.col a, .col p { display: block; color: #cfd6e4; text-decoration: none; font-size: .88rem; margin-bottom: .5rem; }
+.col a:hover { color: #c9a24b; }
+
+.copy { text-align: center; font-size: .78rem; color: #6f7f9c; max-width: 1100px; margin: 1.5rem auto 0; }
+
+@media (max-width: 600px) {
+  .contact-inner { flex-direction: column; }
+}

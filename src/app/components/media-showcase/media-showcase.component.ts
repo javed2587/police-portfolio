@@ -35,7 +35,7 @@ export class MediaShowcaseComponent {
     { title: 'Uniform Store Documentation', event: 'Uniform Store', videoSource: 'youtube',
       videoId: 'PASTE_YOUTUBE_ID', pptId: 'PASTE_GOOGLE_SLIDES_ID', activeTab: 'video' },
     { title: 'Cricket Tournament Recap', event: 'Cricket Match Coverage', videoSource: 'drive',
-      videoId: 'PASTE_DRIVE_FILE_ID', pptId: 'PASTE_GOOGLE_SLIDES_ID', activeTab: 'video' }
+      videoId: 'PASTE_DRIVE_FILE_ID', pptId: '113454101933429371010', activeTab: 'video' }
   ]);
 
   setTab(item: ShowcaseItem, tab: MediaTab) {

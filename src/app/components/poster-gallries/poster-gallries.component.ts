@@ -54,6 +54,6 @@ export class PosterGallriesComponent {
   close() { this.activePoster.set(null); }
 
   // poster-gallery.component.ts
-visibleCount = signal(12);
-showMore() { this.visibleCount.update(v => v + 12); }
+visibleCount = signal(6);
+showMore() { this.visibleCount.update(v => v + 6); }
 }

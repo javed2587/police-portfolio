@@ -47,4 +47,17 @@ export class DutiesComponent {
       { title: 'Medical & Blood Donation Camps', category: 'Infrastructure',
       description: 'covered medical and blood donation camps, documenting key activities and delivering edited media to the pro team.' }
   ]);
+
+  // duties.component.ts — add this method
+categoryColor(cat: string): string {
+  const colors: Record<string, string> = {
+    Ceremony: '#c28e1f',
+    Operations: '#4384c5',
+    Sports: '#5d9c48',
+    Community: '#a84274',
+    Infrastructure: '#596988'
+  };
+  return colors[cat] || '#c9a24b';
+}
+
 }

@@ -1,17 +1,34 @@
-/* navbar.component.css */
+/* navbar.component.css — replace existing rules */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; justify-content: space-between; align-items: center;
   padding: 1rem 2rem; background: #0b1f3a; color: #f5f1e6;
+  border-bottom: 1px solid rgba(201,162,75,.25);
+  box-shadow: 0 2px 12px rgba(0,0,0,.25);
 }
-.brand { font-weight: 700; letter-spacing: .5px; color: #f5f1e6; text-decoration: none; }
-.nav-links { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
-.nav-links a { color: #f5f1e6; text-decoration: none; font-size: .95rem; }
+.brand {
+  font-weight: 700; letter-spacing: .5px; color: #f5f1e6; text-decoration: none;
+  font-size: 1.15rem;
+}
+.brand::after { content: ''; } /* placeholder if you want a small badge/icon later */
+
+.nav-links { display: flex; gap: 1.8rem; list-style: none; margin: 0; padding: 0; }
+.nav-links a {
+  color: #cfd6e4; text-decoration: none; font-size: .9rem;
+  letter-spacing: .3px; text-transform: uppercase; font-weight: 600;
+  position: relative; padding-bottom: 4px; transition: color .2s;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px;
+  background: #c9a24b; transition: width .25s;
+}
 .nav-links a:hover { color: #c9a24b; }
+.nav-links a:hover::after { width: 100%; }
+
 .burger { display: none; background: none; border: none; color: #f5f1e6; font-size: 1.5rem; }
 @media (max-width: 768px) {
   .burger { display: block; }
   .nav-links { position: fixed; top: 60px; right: -100%; flex-direction: column;
     background: #0b1f3a; width: 220px; padding: 1.5rem; transition: right .3s; }
   .nav-links.open { right: 0; }
-}   
+}

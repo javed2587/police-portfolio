@@ -17,10 +17,10 @@ interface Leader {
 export class LeadershipComponent {
   // 👉 Replace name / designation / photo path for each. Put images in src/assets/leadership/
   leaders = signal<Leader[]>([
-    { name: 'Monazza Karamat', designation: 'SP Headquarters', photo: 'assets/z-1.jpg' },
-    { name: 'Baber Shoukat', designation: 'DSP Headquarters', photo: 'assets/z-2.jpg' },
-    { name: 'Taweer', designation: 'Incharge, PRO Team', photo: 'assets/z-3.jpg' },
-    { name: 'Raees', designation: 'Incharge, IT Center', photo: 'assets/javed.jpg' }
+    { name: 'Monazza Karamat', designation: 'SP Headquarters', photo: 'assets/SP.png' },
+    { name: 'Baber Shoukat', designation: 'DSP Headquarters', photo: 'assets/DSP.png' },
+    { name: 'Taweer', designation: 'Incharge, PRO Team', photo: 'assets/PRO.png' },
+    { name: 'Raees', designation: 'Incharge, IT Center', photo: 'assets/IT-Inc.png' }
   ]);
 
 

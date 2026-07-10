@@ -2,12 +2,29 @@
 <section id="duties" class="duties">
   <h2>What I Covered</h2>
   <div class="grid">
-    @for (d of duties(); track d.title) {
+    <!-- @for (d of duties(); track d.title) {
       <div class="card">
         <span class="tag">{{ d.category }}</span>
         <h3>{{ d.title }}</h3>
         <p>{{ d.description }}</p>
       </div>
-    }
+    } -->
+      @for (d of duties(); track $index) {
+  <div class="card" [style.border-left-color]="categoryColor(d.category)">
+    <span class="tag" [style.color]="categoryColor(d.category)">{{ d.category }}</span>
+    <h3>{{ d.title }}</h3>
+    <p>{{ d.description }}</p>
   </div>
+}
+  </div>
+  
 </section>
+
+<!-- duties.component.html -->
+<!-- @for (d of duties(); track $index) {
+  <div class="card" [style.border-left-color]="categoryColor(d.category)">
+    <span class="tag" [style.color]="categoryColor(d.category)">{{ d.category }}</span>
+    <h3>{{ d.title }}</h3>
+    <p>{{ d.description }}</p>
+  </div>
+} -->
