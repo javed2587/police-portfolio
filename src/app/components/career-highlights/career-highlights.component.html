@@ -1,0 +1,22 @@
+<section id="highlights" class="highlights">
+  <h2>Career Highlights</h2>
+  <div class="row">
+    @for (h of highlights(); track $index) {
+      <div class="highlight-card" (click)="open(h)">
+        <img [src]="h.image" [alt]="h.caption" loading="lazy" decoding="async"
+             (error)="$event.target.src = fallbackImg" />
+        <div class="info">
+          <strong>{{ h.caption }}</strong>
+          <span>{{ h.context }}</span>
+        </div>
+      </div>
+    }
+  </div>
+
+  @if (activeHighlight(); as h) {
+    <div class="lightbox" (click)="close()">
+      <img [src]="h.image" [alt]="h.caption" />
+      <p>{{ h.caption }} — {{ h.context }}</p>
+    </div>
+  }
+</section>

@@ -9,10 +9,7 @@
       <figure class="poster" (click)="open(p)">
         <!-- <img [src]="p.imgUrl" [alt]="p.title" loading="lazy" /> -->
          <img [src]="p.imgUrl" [alt]="p.title" loading="lazy" decoding="async" />
-        <figcaption>
-          <strong>{{ p.title }}</strong>
-          <span>{{ p.event }}</span>
-        </figcaption>
+
       </figure>
     }
   </div>

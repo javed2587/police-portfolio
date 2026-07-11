@@ -1,0 +1,21 @@
+<section id="updates" class="updates">
+  <h2>How I Report From the Field</h2>
+  <p class="lead">Real-time written updates with detail sent directly from coverage — a habit that kept every team looped in.</p>
+
+  <div class="scatter">
+    @for (u of updates(); track $index) {
+      <div class="shot" [style.transform]="'rotate(' + u.rotate + 'deg)'" (click)="open(u)">
+        <img [src]="u.image" [alt]="u.caption" loading="lazy" decoding="async"
+             (error)="$event.target.src = fallbackImg" />
+        <p>{{ u.caption }}</p>
+      </div>
+    }
+  </div>
+
+  @if (activeShot(); as u) {
+    <div class="lightbox" (click)="close()">
+      <img [src]="u.image" [alt]="u.caption" />
+      <p>{{ u.caption }}</p>
+    </div>
+  }
+</section>

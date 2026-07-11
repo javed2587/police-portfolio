@@ -8,10 +8,14 @@ import { ContactComponent } from "./components/contact/contact.component";
 //import { MediaShowcaseComponent } from "./components/media-showcase/media-showcase.component";
 import { SkillsComponent } from "./components/skills/skills.component";
 import { LeadershipComponent } from "./components/leadership/leadership.component";
+import { RewardsComponent } from "./components/rewards/rewards.component";
+import { WhatsappUpdatesComponent } from "./components/whatsapp-updates/whatsapp-updates.component";
+import { PhotoGalleryComponent } from "./components/photo-gallery/photo-gallery.component";
+import { CareerHighlightsComponent } from "./components/career-highlights/career-highlights.component";
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, HeroComponent, DutiesComponent, VideoGallariesComponent, PosterGallriesComponent, ContactComponent, SkillsComponent, LeadershipComponent],
+  imports: [NavbarComponent, HeroComponent, DutiesComponent, VideoGallariesComponent, PosterGallriesComponent, ContactComponent, SkillsComponent, LeadershipComponent, RewardsComponent, WhatsappUpdatesComponent, PhotoGalleryComponent, CareerHighlightsComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -23,13 +23,13 @@ export class VideoGallariesComponent {
   // youtube id = the code after "v=" or after "youtu.be/" in your link
   // drive id   = the code after "/d/" and before "/view" in your share link
   videos = signal<VideoItem[]>([
-    { title: 'PASTE VIDEO TITLE 1', event: 'PASTE EVENT NAME 1', source: 'youtube', id: 'd9eJggGVXAI' },
-    { title: 'PASTE VIDEO TITLE 2', event: 'PASTE EVENT NAME 2', source: 'youtube', id: '1yi5B_89Cao' },
-    { title: 'PASTE VIDEO TITLE 3', event: 'PASTE EVENT NAME 3', source: 'youtube', id: '9J0_gKq3i5c' },
+    { title: 'Green Legacy Campaign', event: 'Inspiring Through Action', source: 'youtube', id: 'd9eJggGVXAI' },
+    { title: 'Annual Police Sports', event: 'Hosted by Lahore Headquarters', source: 'youtube', id: '1yi5B_89Cao' },
+    { title: 'Law & Order Duty', event: "Security on New Year's Eve", source: 'youtube', id: '9J0_gKq3i5c' },
 
-    { title: 'PASTE VIDEO TITLE 4', event: 'PASTE EVENT NAME 4', source: 'youtube', id: 'KG6qugGB3Mg' },
-    { title: 'PASTE VIDEO TITLE 1', event: 'PASTE EVENT NAME 1', source: 'youtube', id: 'KG6qugGB3Mg' },
-    { title: 'PASTE VIDEO TITLE 2', event: 'PASTE EVENT NAME 2', source: 'youtube', id: 'r-WlWJzAkF0' }
+    { title: 'Community Outreach Program', event: 'Orphan Children Visit to Police Headquarters', source: 'youtube', id: 'KG6qugGB3Mg' },
+    { title: 'General Salami', event: 'SP Headquarters Inspected General Salami', source: 'youtube', id: '1i84M_Ufxbc' },
+    { title: 'Welfare Open Court', event: 'Special Welfare Initiative for Persons with Disabilities', source: 'youtube', id: 'r-WlWJzAkF0' }
     
     // { title: 'PASTE VIDEO TITLE 3', event: 'PASTE EVENT NAME 3', source: 'youtube', id: '53mC6yvAZ2M' },
     // { title: 'PASTE VIDEO TITLE 4', event: 'PASTE EVENT NAME 4', source: 'youtube', id: 'THOM9mrKiCQ' }

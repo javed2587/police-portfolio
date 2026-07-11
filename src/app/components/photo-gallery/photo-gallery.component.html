@@ -1,0 +1,24 @@
+<section id="gallery" class="photo-gallery">
+  <h2>Around the Headquarters</h2>
+  <p class="lead">Moments from different events and corners of Police Lines, Qilla Gujjar Singh.</p>
+
+  <div class="masonry">
+    @for (p of photos(); track $index) {
+      <div class="tile" [class]="p.size" (click)="open(p)">
+        <img [src]="p.image" [alt]="p.caption" loading="lazy" decoding="async"
+             (error)="$event.target.src = fallbackImg" />
+        <div class="overlay">
+          <strong>{{ p.caption }}</strong>
+          <span>{{ p.location }}</span>
+        </div>
+      </div>
+    }
+  </div>
+
+  @if (activePhoto(); as p) {
+    <div class="lightbox" (click)="close()">
+      <img [src]="p.image" [alt]="p.caption" />
+      <p>{{ p.caption }} — {{ p.location }}</p>
+    </div>
+  }
+</section>

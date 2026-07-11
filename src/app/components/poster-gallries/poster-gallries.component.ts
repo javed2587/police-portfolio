@@ -21,18 +21,19 @@ export class PosterGallriesComponent {
   // 👉 Put your poster images in src/assets/posters/ and list them here.
   // Each poster shows title + event name as a caption under the thumbnail.
   posters = signal<Poster[]>([
-    { title: 'Martyrs Barsi Tribute Poster', event: 'Shuhada Barsi', imgUrl: 'assets/posters/DIG.jpg' },
-    { title: 'Cricket Tournament Recap', event: 'Cricket Match Coverage', imgUrl: 'assets/posters/M-team.jpg' },
-    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/b5.jpg' },
-    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/S-team.jpg' },
-    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/10.jpg' },
-    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/a.jpg' },
+    { title: '', event: '', imgUrl: 'assets/posters/DIG.jpg' },
+        { title: '', event: 'Cricket Match Coverage', imgUrl: 'assets/posters/a3.jpg' },
+    { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/b5.jpg' },
+    { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/S-team.jpg' },
+    { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/sp1.jpeg' },
+    { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/a.jpg' },
 
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/a6.jpg' },
-    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/a7.jpg' },
+    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/sp2.jpeg' },
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/a8.jpg' },
-    { title: 'Cricket Tournament Recap', event: 'Cricket Match Coverage', imgUrl: 'assets/posters/a3.jpg' },
-    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/12.jpg' },
+        { title: 'Cricket Tournament Recap', event: 'Cricket Match Coverage', imgUrl: 'assets/posters/M-team.jpg' },
+    // { title: 'Cricket Tournament Recap', event: 'Cricket Match Coverage', imgUrl: 'assets/posters/a3.jpg' },
+    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/DSP-1.jpeg' },
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/11.jpg' },
 
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/a1.jpg' },

@@ -1,0 +1,67 @@
+.photo-gallery { padding: 5rem 2rem; background: #f5f1e6; }
+.photo-gallery h2 { text-align: center; color: #0b1f3a; font-size: 2rem; margin-bottom: .6rem; }
+.photo-gallery .lead { text-align: center; color: #667; max-width: 520px; margin: 0 auto 3rem; font-size: .95rem; }
+
+.masonry {
+  columns: 4 220px; /* browser auto-fits column count based on width */
+  column-gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tile {
+  position: relative; break-inside: avoid; margin-bottom: 1.2rem;
+  border-radius: 6px; overflow: hidden; cursor: pointer;
+  box-shadow: 0 6px 18px rgba(11,31,58,.12);
+  transform: rotate(0deg);
+}
+/* alternating tiny tilts give the scattered, unordered feel */
+.tile:nth-child(3n) { transform: rotate(-1.5deg); }
+.tile:nth-child(4n) { transform: rotate(1.5deg); }
+.tile:nth-child(5n) { transform: rotate(-1deg); }
+
+.tile img { width: 100%; display: block; }
+.tile.small img { aspect-ratio: 1/1; object-fit: cover; }
+.tile.medium img { aspect-ratio: 3/4; object-fit: cover; }
+.tile.large img { aspect-ratio: 3/5; object-fit: cover; }
+
+.overlay {
+  position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end;
+  padding: .8rem; background: linear-gradient(to top, rgba(11,31,58,.85), transparent 60%);
+  opacity: 0; transition: opacity .25s;
+}
+.tile:hover { transform: rotate(0deg) scale(1.03); z-index: 5; }
+.tile:hover .overlay { opacity: 1; }
+.overlay strong { color: #f5f1e6; font-size: .85rem; }
+.overlay span { color: #c9a24b; font-size: .72rem; margin-top: 2px; }
+
+.lightbox {
+  position: fixed; inset: 0; background: rgba(11,31,58,.94); display: flex; flex-direction: column;
+  align-items: center; justify-content: center; z-index: 200; padding: 2rem;
+}
+.lightbox img { max-height: 85vh; max-width: 90vw; border-radius: 6px; }
+.lightbox p { color: #f5f1e6; margin-top: 1rem; }
+
+@media (max-width: 600px) {
+  .masonry { columns: 2 140px; }
+}
+
+.tile.small img { aspect-ratio: 4/3; object-fit: cover; }
+.tile.medium img { aspect-ratio: 16/10; object-fit: cover; }
+.tile.large img { aspect-ratio: 16/9; object-fit: cover; }
+
+.tile.vertical img { aspect-ratio: 3/4; object-fit: cover; }
+
+
+/* add this to photo-gallery.component.css */
+.masonry {
+  columns: 3 280px; /* fewer, wider columns suit horizontal photos better */
+  column-gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tile.large {
+  /* spans wider visually within the column flow */
+  margin-bottom: 1.5rem;
+}
