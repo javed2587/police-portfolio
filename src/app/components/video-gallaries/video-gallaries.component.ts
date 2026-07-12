@@ -29,10 +29,10 @@ export class VideoGallariesComponent {
 
     { title: 'Community Outreach Program', event: 'Orphan Children Visit to Police Headquarters', source: 'youtube', id: 'KG6qugGB3Mg' },
     { title: 'General Salami', event: 'SP Headquarters Inspected General Salami', source: 'youtube', id: '1i84M_Ufxbc' },
-    { title: 'Welfare Open Court', event: 'Special Welfare Initiative for Persons with Disabilities', source: 'youtube', id: 'r-WlWJzAkF0' }
+    { title: 'Welfare Open Court', event: 'Special Welfare Initiative for Persons with Disabilities', source: 'youtube', id: 'r-WlWJzAkF0' },
     
-    // { title: 'PASTE VIDEO TITLE 3', event: 'PASTE EVENT NAME 3', source: 'youtube', id: '53mC6yvAZ2M' },
-    // { title: 'PASTE VIDEO TITLE 4', event: 'PASTE EVENT NAME 4', source: 'youtube', id: 'THOM9mrKiCQ' }
+    { title: 'Uniform Store Revamp', event: 'Enhanced inventory management and storage facilities for better record keeping.', source: 'youtube', id: '9zN4Bu_Ya7E' },
+    { title: 'Police Internship Program', event: 'Friends of Police Internship – Police Demonstration Session', source: 'youtube', id: 'h5iC14XjrEM' }
 
     // { title: 'PASTE VIDEO TITLE 1', event: 'PASTE EVENT NAME 1', source: 'youtube', id: '53mC6yvAZ2M' },
     // { title: 'PASTE VIDEO TITLE 2', event: 'PASTE EVENT NAME 2', source: 'youtube', id: 'aOQFyZnpNdY' },

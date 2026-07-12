@@ -19,8 +19,8 @@ export class LeadershipComponent {
   leaders = signal<Leader[]>([
     { name: 'Monazza Karamat', designation: 'SP Headquarters', photo: 'assets/SP.png' },
     { name: 'Baber Shoukat', designation: 'DSP Headquarters', photo: 'assets/DSP.png' },
-    { name: 'Taweer', designation: 'Incharge, PRO Team', photo: 'assets/PRO.png' },
-    { name: 'Raees', designation: 'Incharge, IT Center', photo: 'assets/IT-Inc.png' }
+    { name: 'Taweer Bilal', designation: 'Incharge, PRO Team', photo: 'assets/PRO.png' },
+    { name: 'Raees Asif', designation: 'Incharge, IT Center', photo: 'assets/IT-Inc.png' }
   ]);
 
 

@@ -1,9 +1,9 @@
 <section id="skills" class="skills">
   <h2>Skills</h2>
   <div class="grid">
-    @for (s of skills(); track s.name) {
-      <div class="skill-card">
-        <span class="tag">{{ s.category }}</span>
+    @for (s of skills(); track $index) {
+      <div class="skill-card" [style.border-top-color]="categoryColor(s.category)">
+        <span class="tag" [style.color]="categoryColor(s.category)">{{ s.category }}</span>
         <h3>{{ s.name }}</h3>
         <p>{{ s.detail }}</p>
       </div>

@@ -24,7 +24,7 @@ export class PosterGallriesComponent {
     { title: '', event: '', imgUrl: 'assets/posters/DIG.jpg' },
         { title: '', event: 'Cricket Match Coverage', imgUrl: 'assets/posters/a3.jpg' },
     { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/b5.jpg' },
-    { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/S-team.jpg' },
+     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/b.jpg' },
     { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/sp1.jpeg' },
     { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/a.jpg' },
 
@@ -38,8 +38,8 @@ export class PosterGallriesComponent {
 
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/a1.jpg' },
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/a4.jpg' }, 
-    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/a9.jpg' },
-    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/a10.jpg' },
+    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/wardi2.jpeg' },
+    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/wardi-.jpeg' },
     { title: 'Cricket Tournament Recap', event: 'Cricket Match Coverage', imgUrl: 'assets/posters/b1.jpg' },
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/b4.jpg' },
 
@@ -47,7 +47,8 @@ export class PosterGallriesComponent {
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/b7.jpg' },
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/b8.jpg' },
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/b9.jpg' },
-    { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/b.jpg' },
+        { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/S-team.jpg' },
+    // { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/b.jpg' },
     { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/b10.jpg' }
   ]);
 
