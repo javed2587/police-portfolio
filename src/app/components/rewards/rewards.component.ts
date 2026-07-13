@@ -27,7 +27,7 @@ export class RewardsComponent {
 
   // 👉 Replace title / issuedBy / year / image. Put certificate scans/photos in src/assets/rewards/
   rewards = signal<Reward[]>([
-    { title: 'DIG Admin Awards CC-II', issuedBy: 'Provided video-based evidence that helped identify suspected impersonation cases and supported recruitment transparency.', year: '2025', image: 'assets/rewards/certificate-1.jpg' },
+    { title: 'DIG Admin Awards CC-II', issuedBy: 'Recognized for contributing to recruitment transparency by providing video-based evidence that helped identify suspected impersonation cases during the 2025 New Recruitment Process, supporting a fair and secure hiring process.', year: '2025', image: 'assets/rewards/certificate-1.jpg' },
     { title: "", issuedBy: '', year: '', image: 'assets/rewards/sp-cerh.jpeg' }
     // ...add more the same way
   ]);

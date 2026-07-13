@@ -23,7 +23,7 @@ export class PosterGallriesComponent {
   posters = signal<Poster[]>([
     { title: '', event: '', imgUrl: 'assets/posters/DIG.jpg' },
         { title: '', event: 'Cricket Match Coverage', imgUrl: 'assets/posters/a3.jpg' },
-    { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/b5.jpg' },
+    { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/hazi-1.jpeg' },
      { title: 'Recruitment Drive Poster', event: 'Police Bharti Process', imgUrl: 'assets/posters/b.jpg' },
     { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/sp1.jpeg' },
     { title: '', event: 'Police Bharti Process', imgUrl: 'assets/posters/a.jpg' },
