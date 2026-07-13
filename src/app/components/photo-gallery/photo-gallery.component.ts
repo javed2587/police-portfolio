@@ -36,7 +36,7 @@ export class PhotoGalleryComponent {
     { caption: 'Firing FOP', location: 'Headquarters', image: 'assets/gallery/b4.jpeg', size: 'large' },
     { caption: 'DayCare Center', location: 'Police Lines', image: 'assets/gallery/3q.jpeg', size: 'large' },
     { caption: 'Green Intiative', location: 'Ground No. 2', image: 'assets/gallery/6q.jpeg', size: 'large' },
-    { caption: 'Security Rounds', location: 'Qilla Gujjar Singh', image: 'assets/gallery/z4.jpeg', size: 'medium' },
+    { caption: 'Security Rounds', location: 'Qilla Gujjar Singh', image: 'assets/gallery/dspp.jpeg', size: 'medium' },
 
     { caption: 'Training', location: 'Police Lines', image: 'assets/gallery/b1.jpeg', size: 'large' },
     { caption: 'Daily Roll Call', location: 'Parade Ground', image: 'assets/gallery/aaaa.jpeg', size: 'large' },
