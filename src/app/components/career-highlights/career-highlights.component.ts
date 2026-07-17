@@ -28,7 +28,7 @@ export class CareerHighlightsComponent {
   // 👉 Your 3-4 vertical photos — receiving award, with SP/DSP, etc. Put in src/assets/highlights/
   highlights = signal<Highlight[]>([
         { caption: 'Receiving Recognition', context: 'From EX-SP Headquarters - Feb 2025', image: 'assets/carrear/zunair-sphqs.jpeg', size: 'large' },
-    { caption: 'CC-III Performance Certificate Award', context: 'From DIG Admin - March 2025', image: 'assets/carrear/DIG-Admin-v2.jpg', size: 'large' },
+    { caption: 'CC-II Performance Certificate Award', context: 'From DIG Admin - March 2025', image: 'assets/carrear/DIG-Admin-v2.jpg', size: 'large' },
      { caption: 'CC-III Performance Certificate Award', context: 'From SP Headquarters - July 2026', image: 'assets/carrear/CC-3.jpg', size: 'large' },
   ]);
 
