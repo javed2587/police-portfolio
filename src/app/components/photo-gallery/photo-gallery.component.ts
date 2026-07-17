@@ -37,7 +37,14 @@ export class PhotoGalleryComponent {
     { caption: 'DayCare Center', location: 'Police Lines', image: 'assets/gallery/3q.jpeg', size: 'large' },
     { caption: 'Green Intiative', location: 'Ground No. 2', image: 'assets/gallery/6q.jpeg', size: 'large' },
     { caption: 'Security Rounds', location: 'Qilla Gujjar Singh', image: 'assets/gallery/dspp.jpeg', size: 'medium' },
+     { caption: 'Green Intiative', location: 'Ground No. 2', image: 'assets/gallery/4q.jpeg', size: 'large' },
+   
+    { caption: 'Training', location: 'Police Lines', image: 'assets/gallery/dig-faisal.jpg', size: 'vertical' },
+     { caption: 'Security Rounds', location: 'Qilla Gujjar Singh', image: 'assets/gallery/dig-222.png', size: 'medium' },
+      { caption: 'Security Rounds', location: 'Qilla Gujjar Singh', image: 'assets/gallery/dig-111.png', size: 'medium' },
+            { caption: 'Security Rounds', location: 'Qilla Gujjar Singh', image: 'assets/gallery/b2.jpeg', size: 'medium' },
 
+    { caption: 'Security Rounds', location: 'Qilla Gujjar Singh', image: 'assets/gallery/z4.jpeg', size: 'medium' },
     { caption: 'Training', location: 'Police Lines', image: 'assets/gallery/b1.jpeg', size: 'large' },
     { caption: 'Daily Roll Call', location: 'Parade Ground', image: 'assets/gallery/aaaa.jpeg', size: 'large' },
         { caption: 'Sports Gala', location: 'Police Lines', image: 'assets/gallery/b5.jpeg',  size: 'large' },

@@ -4,13 +4,16 @@
   display: flex; justify-content: center; gap: 1.6rem; flex-wrap: wrap;
   max-width: 1000px; margin: 0 auto;
 }
+
 .highlight-card {
-  width: 230px; cursor: pointer; border-radius: 8px; overflow: hidden;
+  width: 300px; cursor: pointer; border-radius: 8px; overflow: hidden;
   box-shadow: 0 10px 26px rgba(0,0,0,.4); border: 2px solid #c9a24b;
   transition: transform .25s;
 }
 .highlight-card:hover { transform: translateY(-6px); }
-.highlight-card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+.highlight-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+
+
 .info { padding: .8rem; background: #14315c; }
 .info strong { display: block; color: #f5f1e6; font-size: .88rem; }
 .info span { display: block; color: #c9a24b; font-size: .75rem; margin-top: 2px; }
