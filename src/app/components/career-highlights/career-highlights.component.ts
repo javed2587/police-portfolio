@@ -5,6 +5,7 @@ interface Highlight {
   caption: string;
   context: string;
   image: string;
+ size: 'small' | 'medium' | 'large' | 'vertical'; 
 }
 
 @Component({
@@ -26,9 +27,9 @@ export class CareerHighlightsComponent {
 
   // 👉 Your 3-4 vertical photos — receiving award, with SP/DSP, etc. Put in src/assets/highlights/
   highlights = signal<Highlight[]>([
-    { caption: 'With SP Headqurters', context: 'From SP Headquarters', image: 'assets/highlights/jav1.jpeg' },
-    { caption: 'Receiving Recognition', context: 'From EX-SP Headquarters', image: 'assets/highlights/jav2.jpeg' },
-    { caption: 'Certificate Presentation', context: 'PRO Team', image: 'assets/highlights/dsp1333.jpeg' }
+        { caption: 'Receiving Recognition', context: 'From EX-SP Headquarters - Feb 2025', image: 'assets/carrear/zunair-sphqs.jpeg', size: 'large' },
+    { caption: 'CC-III Performance Certificate Award', context: 'From DIG Admin - March 2025', image: 'assets/carrear/DIG-Admin-v2.jpg', size: 'large' },
+     { caption: 'CC-III Performance Certificate Award', context: 'From SP Headquarters - July 2026', image: 'assets/carrear/CC-3.jpg', size: 'large' },
   ]);
 
   open(h: Highlight) { this.activeHighlight.set(h); }

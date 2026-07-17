@@ -1,10 +1,13 @@
+
 <section id="rewards" class="rewards">
   <h2>Awards &amp; Certificates</h2>
   <div class="grid">
     @for (r of rewards(); track $index) {
       <div class="reward-card" (click)="open(r)">
-        <img [src]="r.image" [alt]="r.title" loading="lazy" decoding="async"
-             (error)="$event.target.src = fallbackImg" />
+        <div class="doc-frame">
+          <img [src]="r.image" [alt]="r.title" loading="lazy" decoding="async"
+               (error)="$event.target.src = fallbackImg" />
+        </div>
         <div class="reward-info">
           <h3>{{ r.title }}</h3>
           <p>{{ r.issuedBy }} · {{ r.year }}</p>

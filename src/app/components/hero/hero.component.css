@@ -35,8 +35,13 @@
 /* additions to hero.component.css */
 .accent { color: #c9a24b; }
 
+
 .stats {
-  display: flex; gap: 2rem; margin-bottom: 2rem; padding-top: .5rem;
+  display: flex;
+  flex-wrap: wrap; /* add this — lets stats wrap to a second line on narrower screens instead of squeezing */
+  gap: 2rem 2.2rem; /* slightly reduced horizontal gap since there's one more item now */
+  margin-bottom: 2rem;
+  padding-top: .5rem;
   border-top: 1px solid rgba(245,241,230,.15);
 }
 .stat { display: flex; flex-direction: column; }
